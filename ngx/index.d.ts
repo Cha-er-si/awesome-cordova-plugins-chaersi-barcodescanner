@@ -22,4 +22,5 @@ import { AwesomeCordovaNativePlugin } from '@awesome-cordova-plugins/core';
  */
 export declare class ChaersiBarcodeScanner extends AwesomeCordovaNativePlugin {
     coolMethod(arg1: string): Promise<any>;
+    startCameraScan(): Promise<any>;
 }
