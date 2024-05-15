@@ -29,6 +29,7 @@ var ChaersiBarcodeScanner = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     ChaersiBarcodeScanner.prototype.startCameraScan = function () { return core.cordova(this, "startCameraScan", {}, arguments); };
+    ChaersiBarcodeScanner.prototype.isCameraReady = function () { return core.cordova(this, "isCameraReady", {}, arguments); };
     ChaersiBarcodeScanner.ɵfac = i0__namespace.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0__namespace, type: ChaersiBarcodeScanner, deps: null, target: i0__namespace.ɵɵFactoryTarget.Injectable });
     ChaersiBarcodeScanner.ɵprov = i0__namespace.ɵɵngDeclareInjectable({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0__namespace, type: ChaersiBarcodeScanner });
     ChaersiBarcodeScanner.pluginName = "ChaersiBarcodeScanner";
@@ -43,6 +44,6 @@ var ChaersiBarcodeScanner = /** @class */ (function (_super) {
 }(core.AwesomeCordovaNativePlugin));
 i0__namespace.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "12.2.17", ngImport: i0__namespace, type: ChaersiBarcodeScanner, decorators: [{
             type: i0.Injectable
-        }], propDecorators: { startCameraScan: [] } });
+        }], propDecorators: { startCameraScan: [], isCameraReady: [] } });
 
 exports.ChaersiBarcodeScanner = ChaersiBarcodeScanner;
