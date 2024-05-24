@@ -13,6 +13,7 @@ var ChaersiBarcodeScanner = /** @class */ (function (_super) {
     }
     ChaersiBarcodeScanner.prototype.startCameraScan = function () { return core.cordova(this, "startCameraScan", {}, arguments); };
     ChaersiBarcodeScanner.prototype.isCameraReady = function () { return core.cordova(this, "isCameraReady", {}, arguments); };
+    ChaersiBarcodeScanner.prototype.cameraUnbind = function () { return core.cordova(this, "cameraUnbind", {}, arguments); };
     ChaersiBarcodeScanner.pluginName = "ChaersiBarcodeScanner";
     ChaersiBarcodeScanner.plugin = "chaersi-cordova-barcodescanner";
     ChaersiBarcodeScanner.pluginRef = "ChaersiBarcodeScanner";
